@@ -1,11 +1,33 @@
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
-import gpro from "../image/gpro.png";
-import book from "../image/book.png";
-import controller from "../image/controller.png";
+//import gpro from "C:UserszwittOneDriveDocumentsGitHubTeam7publicimagesgpro.png";
+//import book from ".../public/images/book.png";
+//import controller from "publicimagescontroller.png";
 import "../App.css";
+import storeItems from "../data/items.json";
+import { StoreItem } from "../StoreItem";
 
 export function Home() {
+    return (
+        <>
+            <header className="App-header">
+                <div>
+                    <h2>SecondSail</h2>
+                </div>
+            </header>
+            <Row className="g-3">
+                {storeItems.map((item) => (
+                    <Col key={item.id}>
+                        <StoreItem {...item} />
+                    </Col>
+                ))}
+            </Row>
+        </>
+    );
+}
+
+/*
+export function Home1() {
     return (
         <div className="App">
             <header className="App-header">
@@ -72,7 +94,7 @@ export function Home() {
                 </Container>
             </div>
             <br></br>
-            {/** Below is Admin code */}
+            //{Below is Admin code}
             <br></br>
             <br></br>
             <br></br>
@@ -82,4 +104,5 @@ export function Home() {
     );
 }
 
-export default Home;
+*/
+//export default Home;

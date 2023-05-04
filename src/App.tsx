@@ -3,15 +3,16 @@ import { Container } from "react-bootstrap";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Cart from "./pages/Cart";
-import Home from "./pages/Home";
+import { Home } from "./pages/Home";
 import Navbar from "./Navbar";
 import Checkout from "./pages/Checkout";
 import AdminPage from "./pages/Admin";
 import Login from "./pages/Login";
+import { CartProvider } from "./CartContext";
 
 function App() {
     return (
-        <>
+        <CartProvider>
             <Navbar />
             <Container>
                 <Routes>
@@ -22,7 +23,7 @@ function App() {
                     <Route path="/login" element={<Login />} />
                 </Routes>
             </Container>
-        </>
+        </CartProvider>
     );
 }
 

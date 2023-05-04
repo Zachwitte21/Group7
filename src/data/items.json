@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Logitech GPX",
+        "price": 150.0,
+        "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpaJk258GAEB6wn_CmqB3bGtM8p48osP92VsoNqZQeMg&usqp=CAU&ec=48665701"
+    },
+    {
+        "id": 2,
+        "name": "Sony Headphones",
+        "price": 60.0,
+        "imgUrl": "https://mma.prnewswire.com/media/2005357/Sony_WH_CH520_headphone.jpg?w=200"
+    },
+    {
+        "id": 3,
+        "name": "Book",
+        "price": 15.0,
+        "imgUrl": "https://picture.graycity.net/img/al-sweigart/automate_the_boring_stuff_with_python.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Controller",
+        "price": 75.0,
+        "imgUrl": "https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_2.0/c_scale,w_400/ncom/My%20Nintendo%20Store/EN-US/Nintendo%20Switch%20Accessories/Controllers/pro-controller-legend-of-zelda-tears-of-the-kingdom-special-edition-117075/117075-legend-of-zelda-tears-of-the-kingdom-pro-controller-front-1200x675"
+    }
+]

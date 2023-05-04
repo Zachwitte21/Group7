@@ -1,9 +1,9 @@
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 // import image from "./image/image.png";
-import gpro from "../image/gpro.png";
-import book from "../image/book.png";
-import controller from "../image/controller.png";
+import gpro from "../images/gpro.png";
+import book from "../images/book.png";
+import controller from "../images/controller.png";
 import "../admin.css";
 
 function AdminPage() {
