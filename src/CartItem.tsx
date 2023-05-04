@@ -3,7 +3,6 @@ import { useCart } from "./CartContext";
 import storeItems from "./data/items.json";
 import { Stack } from "react-bootstrap";
 import { currencyFormat } from "./utilities/currencyFormat";
-import { isQualifiedName } from "typescript";
 import { Button } from "react-bootstrap";
 
 type CartItemProps = {

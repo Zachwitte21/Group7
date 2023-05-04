@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 //import gpro from "C:UserszwittOneDriveDocumentsGitHubTeam7publicimagesgpro.png";
 //import book from ".../public/images/book.png";
 //import controller from "publicimagescontroller.png";

@@ -2,7 +2,6 @@ import React from "react";
 import { Offcanvas, Stack } from "react-bootstrap";
 import { useCart } from "./CartContext";
 import { CartItem } from "./CartItem";
-import { StoreItem } from "./StoreItem";
 import { currencyFormat } from "./utilities/currencyFormat";
 import storeItems from "./data/items.json";
 
