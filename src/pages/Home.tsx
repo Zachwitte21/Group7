@@ -14,6 +14,18 @@ export function Home() {
                 <div>
                     <h2>SecondSail</h2>
                 </div>
+                <div className="wrap">
+                    <div className="search">
+                        <input
+                            type="text"
+                            className="searchTerm"
+                            placeholder="Search:"
+                        ></input>
+                        <button type="submit" className="searchButton">
+                            <i className="fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
             </header>
             <Row className="g-3">
                 {storeItems.map((item) => (
