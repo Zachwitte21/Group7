@@ -1,3 +1,4 @@
+/* eslint-disable no-extra-parens */
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 //import gpro from "C:UserszwittOneDriveDocumentsGitHubTeam7publicimagesgpro.png";

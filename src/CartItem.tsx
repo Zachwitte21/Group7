@@ -1,3 +1,4 @@
+/* eslint-disable no-extra-parens */
 import React from "react";
 import { useCart } from "./CartContext";
 import storeItems from "./data/items.json";
