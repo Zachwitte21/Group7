@@ -1,22 +1,58 @@
+/* eslint-disable no-extra-parens */
 import React from "react";
-import { Button, Col, Container, Row } from "react-bootstrap";
-// import image from "./image/image.png";
-import gpro from "./image/gpro.png";
-import book from "./image/book.png";
-import controller from "./image/controller.png";
-import "./admin.css";
+import { Col, Row } from "react-bootstrap";
+//import gpro from "C:UserszwittOneDriveDocumentsGitHubTeam7publicimagesgpro.png";
+//import book from ".../public/images/book.png";
+//import controller from "publicimagescontroller.png";
+import "../App.css";
+import storeItems from "../data/items.json";
+import { StoreItem } from "../StoreItem";
 
-function admin(): JSX.Element {
+export function Home() {
     return (
-        <div className="admin">
-            <header className="admin-header">SecondSail ADMIN VIEW</header>
+        <>
+            <header className="App-header">
+                <div>
+                    <h2>SecondSail</h2>
+                </div>
+                <div className="wrap">
+                    <div className="search">
+                        <input
+                            type="text"
+                            className="searchTerm"
+                            placeholder="Search:"
+                        ></input>
+                        <button type="submit" className="searchButton">
+                            <i className="fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </header>
+            <Row className="g-3">
+                {storeItems.map((item) => (
+                    <Col key={item.id}>
+                        <StoreItem {...item} />
+                    </Col>
+                ))}
+            </Row>
+        </>
+    );
+}
+
+/*
+export function Home1() {
+    return (
+        <div className="App">
+            <header className="App-header">
+                <div>
+                    <h2>SecondSail</h2>
+                </div>
+            </header>
             <br></br>
             <br></br>
             <p>
-                <Button disabled>Store</Button>
-                <Button>Orders</Button>
+                <Button>My history orders</Button>
             </p>
-            <br></br>
             <div>
                 <Container>
                     <Row></Row>
@@ -31,9 +67,6 @@ function admin(): JSX.Element {
                             <Col>Logitech G Pro Superlight</Col>
                             <p>Price: $150.00</p>
                             <Button>Add to Cart</Button>
-                            <Col>
-                                <Button>Edit</Button>
-                            </Col>
                         </Col>
                         <Col>
                             <img
@@ -47,9 +80,6 @@ function admin(): JSX.Element {
                             <Col>Sony Headphones</Col>
                             <p>Price: $60.00</p>
                             <Button>Add to Cart</Button>
-                            <Col>
-                                <Button>Edit</Button>
-                            </Col>
                         </Col>
                         <Col>
                             <img
@@ -61,9 +91,6 @@ function admin(): JSX.Element {
                             <Col>Used Python Textbook</Col>
                             <p>Price: $15.00</p>
                             <Button>Add to Cart</Button>
-                            <Col>
-                                <Button>Edit</Button>
-                            </Col>
                         </Col>
                         <Col>
                             <img
@@ -75,23 +102,20 @@ function admin(): JSX.Element {
                             <Col>Nintendo Switch Pro Controller</Col>
                             <p>Price: $74.99</p>
                             <Button>Add to Cart</Button>
-                            <Col>
-                                <Button>Edit</Button>
-                            </Col>
-                        </Col>
-                        <Col>
-                            <Button>Create New Item</Button>
                         </Col>
                     </Row>
                 </Container>
             </div>
             <br></br>
-            <p>
-                Edited by Zachary Witte, ZhongYiJiang, Sean Hennessey and Yuhan
-                Lin
-            </p>
+            //{Below is Admin code}
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
         </div>
     );
 }
 
-export default admin;
+*/
+//export default Home;

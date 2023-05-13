@@ -21,8 +21,9 @@
     margin: auto;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     justify-content: center;
-    font-size: calc(10px + 2vmin);
+    font-size: calc(30px + 2vmin);
     color: white;
 }
 
@@ -41,4 +42,47 @@
     to {
         transform: rotate(360deg);
     }
+}
+
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.searchTerm {
+    width: 80%;
+    border: 3px solid #00b4cc;
+    border-right: none;
+    padding: 5px;
+    height: 25px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9dbfaf;
+    font-size: 20px;
+}
+
+.searchTerm:focus {
+    color: #00b4cc;
+}
+
+.searchButton {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #00b4cc;
+    border-top: 17px solid #00b4cc;
+    background: #00b4cc;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.wrap {
+    width: 20%;
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
