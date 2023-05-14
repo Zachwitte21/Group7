@@ -17,19 +17,7 @@ export function EditItems(): JSX.Element {
     function blankId() {
         setId("");
     }
-
-    function blankName() {
-        setName("");
-    }
-
-    function blankPrice() {
-        setPrice("");
-    }
-
-    function blankImg() {
-        setImg("");
-    }
-
+        
     function updateId(event: React.ChangeEvent<HTMLInputElement>) {
         setId(event.target.value);
     }
@@ -89,7 +77,6 @@ export function EditItems(): JSX.Element {
 
     function deleteItem(): void {
         const idNum = parseFloat(id);
-        const priceNum = parseFloat(price);
         const itemIndex = storeItems.findIndex((i) => i.id === idNum);
         storeItems.splice(itemIndex, 1);
         setId("Id:");
@@ -106,7 +93,7 @@ export function EditItems(): JSX.Element {
                 Edit Items
             </Button>
             <br></br>
-            {newItem && !correctID && (
+            {newItem && !correctID && 
                 <>
                     <Form.Label>ID of Item:</Form.Label>
                     <Form.Control
@@ -117,8 +104,8 @@ export function EditItems(): JSX.Element {
                     <Button onClick={startEdit}>Enter</Button>
                     <Button onClick={cancelItem}>Cancel</Button>
                 </>
-            )}
-            {newItem && correctID && (
+            }
+            {newItem && correctID && 
                 <>
                     <Form.Label>Name:</Form.Label>
                     <Form.Control
@@ -144,7 +131,7 @@ export function EditItems(): JSX.Element {
                         Delete Item
                     </Button>
                 </>
-            )}
+            }
         </div>
     );
 }
