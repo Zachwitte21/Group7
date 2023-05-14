@@ -18,18 +18,6 @@ export function EditItems(): JSX.Element {
         setId("");
     }
 
-    function blankName() {
-        setName("");
-    }
-
-    function blankPrice() {
-        setPrice("");
-    }
-
-    function blankImg() {
-        setImg("");
-    }
-
     function updateId(event: React.ChangeEvent<HTMLInputElement>) {
         setId(event.target.value);
     }
@@ -58,7 +46,7 @@ export function EditItems(): JSX.Element {
     function saveItem(): void {
         const idNum = parseFloat(id);
         const priceNum = parseFloat(price);
-        let itemIndex = storeItems.findIndex((i) => i.id === idNum);
+        const itemIndex = storeItems.findIndex((i) => i.id === idNum);
         storeItems[itemIndex] = {
             id: idNum,
             name,
@@ -89,7 +77,6 @@ export function EditItems(): JSX.Element {
 
     function deleteItem(): void {
         const idNum = parseFloat(id);
-        const priceNum = parseFloat(price);
         let itemIndex = storeItems.findIndex((i) => i.id === idNum);
         storeItems.splice(itemIndex, 1);
         setId("Id:");

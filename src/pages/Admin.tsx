@@ -1,9 +1,5 @@
 import React from "react";
-import { Button, Col, Container, Row } from "react-bootstrap";
-// import image from "./image/image.png";
-import gpro from "../images/gpro.png";
-import book from "../images/book.png";
-import controller from "../images/controller.png";
+import { Col, Row } from "react-bootstrap";
 import "../admin.css";
 import storeItems from "../data/items.json";
 import { StoreItem } from "../StoreItem";
