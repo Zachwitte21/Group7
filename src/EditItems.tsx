@@ -58,7 +58,7 @@ export function EditItems(): JSX.Element {
     function saveItem(): void {
         const idNum = parseFloat(id);
         const priceNum = parseFloat(price);
-        let itemIndex = storeItems.findIndex((i) => i.id === idNum);
+        const itemIndex = storeItems.findIndex((i) => i.id === idNum);
         storeItems[itemIndex] = {
             id: idNum,
             name,
