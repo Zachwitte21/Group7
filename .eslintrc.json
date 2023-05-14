@@ -32,15 +32,15 @@
                 "endOfLine": "auto"
             }
         ],
-        "no-extra-parens": [
-            "warn",
-            "all",
-            {
-                "nestedBinaryExpressions": false,
-                "returnAssign": false,
-                "enforceForArrowConditionals": false
-            }
-        ],
+        //"no-extra-parens": [
+        //    "warn",
+        //    "all",
+        //    {
+        //        "nestedBinaryExpressions": false,
+        //        "returnAssign": false,
+        //        "enforceForArrowConditionals": false
+        //    }
+        //],
         "brace-style": ["error", "1tbs"],
         "indent": ["error", 4],
         "quotes": ["error", "double"],
