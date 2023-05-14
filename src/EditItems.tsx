@@ -17,7 +17,7 @@ export function EditItems(): JSX.Element {
     function blankId() {
         setId("");
     }
-        
+
     function updateId(event: React.ChangeEvent<HTMLInputElement>) {
         setId(event.target.value);
     }
