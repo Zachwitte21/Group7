@@ -24,12 +24,12 @@ function AdminPage(): JSX.Element {
                 <br></br>
             </header>
             <Row className="g-3">
-                {storeItems.map((item) => 
+                {storeItems.map((item) => (
                     <Col key={item.id}>
                         <StoreItem {...item} />
                         {item.id}
                     </Col>
-                )}
+                ))}
             </Row>
         </>
     );
