@@ -31,6 +31,7 @@ function AdminPage(): JSX.Element {
                 {storeItems.map((item) => (
                     <Col key={item.id}>
                         <StoreItem {...item} />
+                        {item.id}
                     </Col>
                 ))}
             </Row>
