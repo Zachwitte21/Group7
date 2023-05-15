@@ -17,10 +17,6 @@ function Navbar() {
                         {" "}
                         Checkout
                     </Nav.Link>
-                    <Nav.Link to="/historyorder" as={NavLink}>
-                        {" "}
-                        History order
-                    </Nav.Link>
                     <Nav.Link to="/login" as={NavLink}>
                         {" "}
                         Login
