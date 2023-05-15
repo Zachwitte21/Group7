@@ -25,6 +25,10 @@ function Navbar() {
                         {" "}
                         Login
                     </Nav.Link>
+                    <Nav.Link to="/register" as={NavLink}>
+                        {" "}
+                        SignUp
+                    </Nav.Link>
                     <Nav.Link to="/admin" as={NavLink}>
                         {" "}
                         Admin

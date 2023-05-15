@@ -1,13 +1,14 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Cart from "./pages/Cart";
 import { Home } from "./pages/Home";
 import Navbar from "./Navbar";
 import Checkout from "./pages/Checkout";
 import AdminPage from "./pages/Admin";
 import Login from "./pages/Login";
+import SignUp from "./pages/SignUp";
 import HistoryOrder from "./pages/HistoryOrder";
 import { CartProvider } from "./CartContext";
 
@@ -16,14 +17,15 @@ function App() {
         <CartProvider>
             <Navbar />
             <Container>
-                <Routes>
-                    <Route path="/homepage" element={<Home />} />
-                    <Route path="/cart" element={<Cart />} />
-                    <Route path="/checkout" element={<Checkout />} />
-                    <Route path="/historyorder" element={<HistoryOrder />} />
-                    <Route path="/admin" element={<AdminPage />} />
-                    <Route path="/login" element={<Login />} />
-                </Routes>
+                <Switch>
+                    <Route path="/homepage" component={Home} />
+                    <Route path="/cart" component={Cart} />
+                    <Route path="/checkout" component={Checkout} />
+                    <Route path="/historyorder" component={HistoryOrder} />
+                    <Route path="/admin" component={AdminPage} />
+                    <Route path="/login" component={Login} />
+                    <Route path="/register" component={SignUp} />
+                </Switch>
             </Container>
         </CartProvider>
     );
