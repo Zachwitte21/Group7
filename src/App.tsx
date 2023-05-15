@@ -2,7 +2,7 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import "./App.css";
 import { Route, Switch } from "react-router-dom";
-import Cart from "./pages/Cart";
+//import Cart from "./pages/Cart";
 import { Home } from "./pages/Home";
 import Navbar from "./Navbar";
 import Checkout from "./pages/Checkout";
@@ -19,7 +19,6 @@ function App() {
             <Container>
                 <Switch>
                     <Route path="/homepage" component={Home} />
-                    <Route path="/cart" component={Cart} />
                     <Route path="/checkout" component={Checkout} />
                     <Route path="/historyorder" component={HistoryOrder} />
                     <Route path="/admin" component={AdminPage} />

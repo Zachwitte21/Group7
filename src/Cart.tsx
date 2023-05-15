@@ -5,6 +5,7 @@ import { useCart } from "./CartContext";
 import { CartItem } from "./CartItem";
 import { currencyFormat } from "./utilities/currencyFormat";
 import storeItems from "./data/items.json";
+import { useHistory } from "react-router-dom";
 
 type CartProps = {
     isOpen: boolean;
@@ -12,6 +13,7 @@ type CartProps = {
 
 export function Cart({ isOpen }: CartProps) {
     const { closeCart, cartItems } = useCart();
+    const history = useHistory();
     return (
         <Offcanvas show={isOpen} onHide={closeCart} placement="end">
             <Offcanvas.Header closeButton>
@@ -36,6 +38,12 @@ export function Cart({ isOpen }: CartProps) {
                             }, 0)
                         )}
                     </div>
+                    <button
+                        onClick={() => history.push("/checkout")}
+                        onClickCapture={() => closeCart()}
+                    >
+                        Checkout
+                    </button>
                 </Stack>
             </Offcanvas.Body>
         </Offcanvas>

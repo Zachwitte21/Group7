@@ -12,12 +12,14 @@ type StoreItemProps = {
 };
 export function StoreItem({ id, name, price, imgUrl }: StoreItemProps) {
     const {
+        addToCart,
         getItemQuantity,
         increaseCartQuantity,
         decreaseCartQuantity,
         removeFromCart
     } = useCart();
     const quantity = getItemQuantity(id);
+
     return (
         <Card className="h-100">
             <Card.Img
@@ -35,10 +37,7 @@ export function StoreItem({ id, name, price, imgUrl }: StoreItemProps) {
                 </Card.Title>
                 <div className="mt-auto">
                     {quantity === 0 ? (
-                        <Button
-                            className="w-100"
-                            onClick={() => increaseCartQuantity(id)}
-                        >
+                        <Button className="w-100" onClick={() => addToCart(id)}>
                             + Add To Cart
                         </Button>
                     ) : (
