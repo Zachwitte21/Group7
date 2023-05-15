@@ -15,8 +15,9 @@
 
 .App-header {
     width: 100%;
-    background-color: #282c;
-    min-height: 20vh;
+    background-image: url("./images/Banner.png");
+    background-size: cover;
+    min-height: 30vh;
     display: table;
     margin: auto;
     flex-direction: column;
@@ -46,6 +47,7 @@
 
 .search {
     width: 100%;
+    transform: translateY(65px);
     position: relative;
     display: flex;
 }
@@ -85,4 +87,24 @@
     top: 27%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.home-background {
+    min-width: 100%;
+    min-height: 100%;
+    background-color: black;
+    border-left-color: grey;
+    background-image: url(https://static1.srcdn.com/wordpress/wp-content/uploads/2022/10/Overwatch-2-Winston-On-Oasis-Map.jpg?q=50&fit=contain&w=1140&h=&dpr=1.5);
+    background-size: cover;
+}
+
+#bg-right {
+    background-image: url("./images/SSbackground.png");
+    background-size: auto;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0%;
+    right: 0;
+    z-index: -1;
 }
